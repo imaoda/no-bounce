@@ -1,0 +1,17 @@
+{
+  "author": {
+    "name": "wangyongfeng"
+  },
+  "description": "移除外层橡皮筋效果",
+  "keywords": [
+    "橡皮筋",
+    "ios"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "no-bounce",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.2"
+}
