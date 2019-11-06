@@ -4,6 +4,7 @@
   const conf = { passive: false }
 
   let startY // 记录触摸起点坐标
+  let oldY
 
   /**
    * 获取祖先列表
@@ -19,7 +20,7 @@
   }
 
   function reachTop(dom) {
-    return dom.scrollTop <= 0
+    return dom.scrollTop <= 1
   }
 
   function reachBottom(dom) {
@@ -27,6 +28,8 @@
   }
 
   function init() {
+    if(window.$$_no_bounce_inited) return
+    window.$$_no_bounce_inited = 1
     const body = document.body
     body.addEventListener(
       'touchstart',
